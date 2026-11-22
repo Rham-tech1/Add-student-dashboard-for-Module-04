@@ -1,29 +1,78 @@
-# Python cache & bytecode
+# ================================
+# Python
+# ================================
+
 __pycache__/
 *.py[cod]
 *$py.class
-*.cpython-*.pyc
 
-# Django local database & media
-*.sqlite3
-db.sqlite3
-media/
-staticfiles/
+# ================================
+# Virtual Environment
+# ================================
 
-# Environments
-.env
-.env.*
-venv/
 .venv/
+venv/
 env/
 ENV/
 
-# IDE & Editor files
+# ================================
+# Django
+# ================================
+
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# ================================
+# Environment / Secrets
+# ================================
+
+.env
+.env.*
+!.env.example
+
+# ================================
+# IDE / Editors
+# ================================
+
 .vscode/
 .idea/
-*.swp
-*~
 
-# Operating System files
+# ================================
+# Operating System
+# ================================
+
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ================================
+# Python Tools
+# ================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ================================
+# Jupyter
+# ================================
+
+.ipynb_checkpoints/
+
+# ================================
+# Coverage
+# ================================
+
+.coverage
+htmlcov/
+
+# ================================
+# Build / Distribution
+# ================================
+
+build/
+dist/
+*.egg-info/
